@@ -75,9 +75,13 @@ monogatari.assets ('scenes', {
 
 // Define the Characters
 monogatari.characters ({
-	'y': {
-		name: 'Yui',
+	's': {
+		name: 'Selena',
 		color: '#5bcaff'
+	},
+	'j': {
+		name: 'Jonathan',
+		color: '#0000FF'
 	}
 });
 
@@ -135,9 +139,10 @@ monogatari.script ({
 	'No': [
 
 		'Okay. Let’s start the game then.',
+		'In the game, you will be playing the role of Selena, who is a high school student. You will go through her concerns or problems in her relationship and make decisions for her.',
 		{
 			'Choice': {
-				'Dialog': 'Choose an alphabet to start your game. Different alphabet corresponds to different story!',
+				'Dialog': 'Choose an alphabet to start your game. Different alphabet corresponds to a different story!',
 				'A': {
 					'Text': 'A',
 					'Do': 'jump StoryA'
@@ -159,11 +164,25 @@ monogatari.script ({
 	],
 
 	'StoryA': [
-		'Your name is Selena, and you have a boyfriend whose name is Jonathan. You two have dated for 2 months and haven’t have sex yet.'
+		'Your name is Selena and you are a 10th grader at the LeX Academy. You have a boyfriend whose name is Jonathan. You two have dated for 2 months now',
+		'j Hey love, Netflix and chill at your place tonight?', 
+		's Sure bb!',
+		'7p.m. at Jonathan’s home',
+		'Jonathan and Selena cuddle in bed and watch Euphoria together, aftering 20 minutes they’re making out a bit. Jonathan gradually makes the kisses more sexual and makes it clear that he wants to have sex.',
+		''
+
+		
+
+
 	],
 
 	'StoryB': [
-		'Your name is Selena'
+		'Your name is Selena and you are a 10th grader at the LeX Academy. You have a boyfriend, Jonathan, who is also a 10th grader at your High School.',
+		'One day at school',
+		's Hey babe! Do you want to have dinner and hang out tonight with my friends?',
+		'j Oh, sure!',
+		's Do you know Anna? She is in your grade as well. You guys might have taken the same classes. Also, Jack and Alison will join us later tonight.',
+		'j Sounds cool.'
 	],
 
 	'StoryC': [
