@@ -273,7 +273,7 @@ monogatari.script ({
 	],
 	'CC2': [
 		'You were so sad and frustrated that you decided to throw and break things in your room. ',
-		's Ahhhhh, why!!! ',
+		's Ahhhhh, why!!! ', 
 		'Throwing a book to the closet and crying,',
 		'Soon, your room became a mess. Although you release some of the stress after throwing things, you still feel down. You couldn’t accept the fact that you got rejected and even felt anger towards Jonathan. It was hard for you to pretend nothing happened between you and Jonathan for the next couple of weeks. Jonathan got tired of you and you two got drifted apart.',
 		'end'
