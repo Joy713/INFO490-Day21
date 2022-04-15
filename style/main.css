@@ -45,7 +45,7 @@ button:hover {
 
 /* Main Menu Styling */
 [data-screen="main"] {
-	background-image: url("../assets/scenes/starting-background.png");
+	background-image: url("../assets/scenes/bg.png");
 }
 
 /* Main Menu Buttons Styling */
