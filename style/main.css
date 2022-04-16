@@ -88,7 +88,7 @@ button:hover {
 
 /* Choice Buttons style */
 [data-component="choice-container"] button {
-	margin: 0.5em
+	margin: 0.3em
 }
 
 /* Choice Button Style on Hover */
@@ -113,6 +113,9 @@ button:hover {
 
 /* Character Images Styles */
 [data-screen="game"] [data-character] {
+	margin-bottom: 15rem;
+	max-width: 70%;
+	height:auto;
 
 }
 
