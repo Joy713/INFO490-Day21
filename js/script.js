@@ -6,46 +6,46 @@ monogatari.action ('message').messages ({
 		title: 'Education Resources',
 		subtitle: 'Useful articles that will help you with similar issues',
 		body: `
-			<p><a href='https://shorturl.at/enyUX/'>saying “No” to Sex</a></p>
-			<p><a href='https://shorturl.at/cgoKP/'>When to have sex?</a></p>
-			<p><a href='https://shorturl.at/pFGU2/'>Risks of not using a condom</a></p>
-			<p><a href='https://www.mayoclinic.org/tests-procedures/morning-after-pill/about/pac-20394730'>Side effects of morning-after pills</a></p>
-			<p><a href='https://shorturl.at/asAT5/'>Challenges of being a teenage parent</a></p>
-			<p><a href='https://shorturl.at/qwITX/'>What is sexual consent?</a></p>
+			<p><a href='https://shorturl.at/enyUX/' target="_blank">saying “No” to Sex</a></p>
+			<p><a href='https://shorturl.at/cgoKP/' target="_blank">When to have sex?</a></p>
+			<p><a href='https://shorturl.at/pFGU2/' target="_blank">Risks of not using a condom</a></p>
+			<p><a href='https://www.mayoclinic.org/tests-procedures/morning-after-pill/about/pac-20394730' target="_blank">Side effects of morning-after pills</a></p>
+			<p><a href='https://shorturl.at/asAT5/' target="_blank">Challenges of being a teenage parent</a></p>
+			<p><a href='https://shorturl.at/qwITX/' target="_blank">What is sexual consent?</a></p>
 		`
 	},
 	'Education2': {
 		title: 'Education Resources',
 		subtitle: 'Useful articles that will help you with similar issues',
 		body: `
-			<p><a href='https://www.verywellmind.com/is-someone-gaslighting-you-4147470#:~:text=Gaslighting%20is%20a%20form%20of,question%20their%20judgments%20and%20reality.'>What is gaslighting?</a></p>
-			<p><a href='https://www.verywellmind.com/feeling-words-to-help-spouse-2300571'>Improve Your Relationship By Putting Feelings Into Words</a></p>
-			<p><a href='https://www.coupletalk.com/listentips201909/'>4 Ways to Deepen Conversations in Your Relationship</a></p>
-			<p><a href='https://www.ny.gov/teen-dating-violence-awareness-and-prevention/what-does-healthy-relationship-look#:~:text=Healthy%20relationships%20involve%20honesty%2C%20trust,or%20retaliation%2C%20and%20share%20decisions.'>What Does a Healthy Relationship Look Like?</a></p>
-			<p><a href='https://www.healthline.com/health/how-to-deal-with-gaslighting'>Ways to deal with gaslighting</a></p>
-			<p><a href='https://www.mentalhelp.net/blogs/whose-fault-is-it-how-blame-sabotages-relationships/'>How Blame Sabotages Relationships</a></p>
+			<p><a href='https://www.verywellmind.com/is-someone-gaslighting-you-4147470#:~:text=Gaslighting%20is%20a%20form%20of,question%20their%20judgments%20and%20reality.' target="_blank">What is gaslighting?</a></p>
+			<p><a href='https://www.verywellmind.com/feeling-words-to-help-spouse-2300571' target="_blank">Improve Your Relationship By Putting Feelings Into Words</a></p>
+			<p><a href='https://www.coupletalk.com/listentips201909/' target="_blank">4 Ways to Deepen Conversations in Your Relationship</a></p>
+			<p><a href='https://www.ny.gov/teen-dating-violence-awareness-and-prevention/what-does-healthy-relationship-look#:~:text=Healthy%20relationships%20involve%20honesty%2C%20trust,or%20retaliation%2C%20and%20share%20decisions.' target="_blank">What Does a Healthy Relationship Look Like?</a></p>
+			<p><a href='https://www.healthline.com/health/how-to-deal-with-gaslighting' target="_blank">Ways to deal with gaslighting</a></p>
+			<p><a href='https://www.mentalhelp.net/blogs/whose-fault-is-it-how-blame-sabotages-relationships/' target="_blank">How Blame Sabotages Relationships</a></p>
 		`
 	},
 	'Education3': {
 		title: 'Education Resources',
 		subtitle: 'Useful articles that will help you with similar issues',
 		body: `
-			<p><a href='https://www.goodhousekeeping.com/life/relationships/a30719895/how-to-deal-with-rejection/'>Deal rejection in a healthy way</a></p>
-			<p><a href='https://www.jedfoundation.org/resource/how-to-cope-with-sadness-and-depressive-feelings'>How to Cope with Sadness and Depressive Feelings</a></p>
-			<p><a href='https://www.healthline.com/health/how-to-release-anger#check-yourself'>11 ways to release anger</a></p>
-			<p><a href='https://www.artofmanliness.com/people/social-skills/how-to-comfort-someone-whos-sad-crying/ '>How to Comfort Someone Who’s Sad/Crying</a></p>
-			<p><a href='https://hellorelish.com/articles/how-to-reject-someone.html'>10 Tips for Rejecting Someone Nicely</a></p>
+			<p><a href='https://www.goodhousekeeping.com/life/relationships/a30719895/how-to-deal-with-rejection/' target="_blank">Deal rejection in a healthy way</a></p>
+			<p><a href='https://www.jedfoundation.org/resource/how-to-cope-with-sadness-and-depressive-feelings' target="_blank">How to Cope with Sadness and Depressive Feelings</a></p>
+			<p><a href='https://www.healthline.com/health/how-to-release-anger#check-yourself' target="_blank">11 ways to release anger</a></p>
+			<p><a href='https://www.artofmanliness.com/people/social-skills/how-to-comfort-someone-whos-sad-crying/ ' target="_blank">How to Comfort Someone Who’s Sad/Crying</a></p>
+			<p><a href='https://hellorelish.com/articles/how-to-reject-someone.html' target="_blank">10 Tips for Rejecting Someone Nicely</a></p>
 		`
 	},
 	'Education4': {
 		title: 'Education Resources',
 		subtitle: 'Useful articles that will help you with similar issues',
 		body: `
-			<p><a href='https://www.healthnavigator.org.nz/healthy-living/a/argument-tips-for-having-a-healthy-argument/#:~:text=It's%20easy%20to%20interrupt%20or,each%20other%20a%20fair%20hearing.'>Tips for having a healthy argument</a></p>
-			<p><a href='https://www.verywellmind.com/feeling-words-to-help-spouse-2300571'>Improve Your Relationship By Putting Feelings Into Words</a></p>
-			<p><a href='https://www.coupletalk.com/listentips201909/'>4 Ways to Deepen Conversations in Your Relationship</a></p>
-			<p><a href='https://www.loveisrespect.org/resources/conflict-resolution/'>Conflicts resolution</a></p>
-			<p><a href='https://au.reachout.com/articles/managing-the-pressures-of-a-relationship'>Managing the pressures of a relationship</a></p>
+			<p><a href='https://www.healthnavigator.org.nz/healthy-living/a/argument-tips-for-having-a-healthy-argument/#:~:text=It's%20easy%20to%20interrupt%20or,each%20other%20a%20fair%20hearing.' target="_blank">Tips for having a healthy argument</a></p>
+			<p><a href='https://www.verywellmind.com/feeling-words-to-help-spouse-2300571' target="_blank">Improve Your Relationship By Putting Feelings Into Words</a></p>
+			<p><a href='https://www.coupletalk.com/listentips201909/' target="_blank">4 Ways to Deepen Conversations in Your Relationship</a></p>
+			<p><a href='https://www.loveisrespect.org/resources/conflict-resolution/' target="_blank">Conflicts resolution</a></p>
+			<p><a href='https://au.reachout.com/articles/managing-the-pressures-of-a-relationship' target="_blank">Managing the pressures of a relationship</a></p>
 		`
 	},
 	'sad': {
@@ -59,7 +59,7 @@ monogatari.action ('message').messages ({
 			<li>- Connecting with others or talking to a friend or loved one</li>
 			<li>- Moving your body like walking, working out, or playing sports</li>
 			</ul>
-			<p><a href='https://www.jedfoundation.org/resource/how-to-cope-with-sadness-and-depressive-feelings'>To read more</a></p>
+			<p><a href='https://www.jedfoundation.org/resource/how-to-cope-with-sadness-and-depressive-feelings' target="_blank">To read more</a></p>
 			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
 		`
 	},
@@ -75,7 +75,7 @@ monogatari.action ('message').messages ({
 			<li>- Don’t minimize their pain or try to cheer them up.</li>
 			<li>- Offer physical affection if appropriate.</li>
 			</ul>
-			<p><a href='https://www.artofmanliness.com/people/social-skills/how-to-comfort-someone-whos-sad-crying/'>To read more</a></p>
+			<p><a href='https://www.artofmanliness.com/people/social-skills/how-to-comfort-someone-whos-sad-crying/' target="_blank">To read more</a></p>
 			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
 		`
 	},
@@ -84,7 +84,7 @@ monogatari.action ('message').messages ({
 		title: 'How to refuse unwanted sex?',
 		subtitle: '',
 		body: `
-			<p><a href='https://shorturl.at/enyUX/'>saying “No” to Sex</a></p>
+			<p><a href='https://shorturl.at/enyUX/' target="_blank">saying “No” to Sex</a></p>
 			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
 		`
 	},
@@ -114,7 +114,7 @@ monogatari.action ('message').messages ({
 				<li>- Higher chance of contracting HIV</li>
 				<li>- Risk of pregnancy</li>
 			</ul>
-			<p><a href='https://shorturl.at/pFGU2/'>To read more</a></p>
+			<p><a href='https://shorturl.at/pFGU2/' target="_blank">To read more</a></p>
 			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
 		`
 	},
@@ -132,7 +132,7 @@ monogatari.action ('message').messages ({
 		subtitle: '',
 		body: `
 			<p>In general, consent is an active, verbal agreement to engage in sexual activity with someone. Sexual activity without your consent is rape or sexual assault.</p>
-			<p><a href='https://shorturl.at/qwITX/'>To read more</a></p>
+			<p><a href='https://shorturl.at/qwITX/' target="_blank">To read more</a></p>
 			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
 		`
 	},
@@ -141,7 +141,7 @@ monogatari.action ('message').messages ({
 		subtitle: '',
 		body: `
 			<p>Gaslighting is a form of manipulation that often occurs in abusive relationships. It is a covert type of emotional abuse where the bully or abuser misleads the target, creating a false narrative and making them question their judgments and reality.</p>
-			<p><a href='https://www.verywellmind.com/is-someone-gaslighting-you-4147470#:~:text=Gaslighting%20is%20a%20form%20of,question%20their%20judgments%20and%20reality.'>To read more</a></p>
+			<p><a href='https://www.verywellmind.com/is-someone-gaslighting-you-4147470#:~:text=Gaslighting%20is%20a%20form%20of,question%20their%20judgments%20and%20reality.' target="_blank">To read more</a></p>
 			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
 		`
 	},
@@ -168,7 +168,7 @@ monogatari.action ('message').messages ({
 				<li>- Compromise when possible</li>
 				<li>- Consider it all</li>
 			</ul>
-			<p><a href='https://www.loveisrespect.org/resources/conflict-resolution/'>To read more</a></p>
+			<p><a href='https://www.loveisrespect.org/resources/conflict-resolution/' target="_blank">To read more</a></p>
 			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
 		`
 	},
