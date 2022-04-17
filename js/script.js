@@ -6,12 +6,12 @@ monogatari.action ('message').messages ({
 		title: 'Education Resources',
 		subtitle: 'Useful articles that will help you with similar issues',
 		body: `
-			<p><a href='https://shorturl.at/enyUX/' target="_blank">saying “No” to Sex</a></p>
-			<p><a href='https://shorturl.at/cgoKP/' target="_blank">When to have sex?</a></p>
-			<p><a href='https://shorturl.at/pFGU2/' target="_blank">Risks of not using a condom</a></p>
+			<p><a href='https://www.plannedparenthood.org/learn/teens/relationships/all-about-communication/saying-no-sex' target="_blank">saying “No” to Sex</a></p>
+			<p><a href='https://www.businessinsider.com/when-to-start-having-sex-in-relationship-2017-2#:~:text=Harry%20Metcalfe%2FFlickr%20Based%20on,time%20to%20start%20having%20sex.' target="_blank">When to have sex?</a></p>
+			<p><a href='https://www.healthline.com/health/hiv/risks-sex-without-condoms#birthcontrol-and-sti-risk' target="_blank">Risks of not using a condom</a></p>
 			<p><a href='https://www.mayoclinic.org/tests-procedures/morning-after-pill/about/pac-20394730' target="_blank">Side effects of morning-after pills</a></p>
-			<p><a href='https://shorturl.at/asAT5/' target="_blank">Challenges of being a teenage parent</a></p>
-			<p><a href='https://shorturl.at/qwITX/' target="_blank">What is sexual consent?</a></p>
+			<p><a href='https://www.texasadoptioncenter.org/blog/challenges-of-being-a-teenage-parent/' target="_blank">Challenges of being a teenage parent</a></p>
+			<p><a href='https://www.mycallisto.org/cresources/language?gclid=Cj0KCQjw0umSBhDrARIsAH7FCofa21lVm7eSJx8T7Z3nTH68QftiORKyjQ6bEGc5B-qwvm8eajy4ZO0aAtzKEALw_wcB' target="_blank">What is sexual consent?</a></p>
 		`
 	},
 	'Education2': {
@@ -84,7 +84,7 @@ monogatari.action ('message').messages ({
 		title: 'How to refuse unwanted sex?',
 		subtitle: '',
 		body: `
-			<p><a href='https://shorturl.at/enyUX/' target="_blank">saying “No” to Sex</a></p>
+			<p><a href='https://www.plannedparenthood.org/learn/teens/relationships/all-about-communication/saying-no-sex' target="_blank">saying “No” to Sex</a></p>
 			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
 		`
 	},
@@ -114,7 +114,7 @@ monogatari.action ('message').messages ({
 				<li>- Higher chance of contracting HIV</li>
 				<li>- Risk of pregnancy</li>
 			</ul>
-			<p><a href='https://shorturl.at/pFGU2/' target="_blank">To read more</a></p>
+			<p><a href='https://www.healthline.com/health/hiv/risks-sex-without-condoms#birthcontrol-and-sti-risk' target="_blank">To read more</a></p>
 			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
 		`
 	},
@@ -132,7 +132,7 @@ monogatari.action ('message').messages ({
 		subtitle: '',
 		body: `
 			<p>In general, consent is an active, verbal agreement to engage in sexual activity with someone. Sexual activity without your consent is rape or sexual assault.</p>
-			<p><a href='https://shorturl.at/qwITX/' target="_blank">To read more</a></p>
+			<p><a href='https://www.mycallisto.org/cresources/language?gclid=Cj0KCQjw0umSBhDrARIsAH7FCofa21lVm7eSJx8T7Z3nTH68QftiORKyjQ6bEGc5B-qwvm8eajy4ZO0aAtzKEALw_wcB' target="_blank">To read more</a></p>
 			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
 		`
 	},
@@ -256,12 +256,14 @@ monogatari.characters ({
 		sprites: {
 			talk:'sTalk.png',
 			happy: 'sHappy.png',
-			cry: 'sCry.png'
+			cry: 'sCry.png',
+			angry: 'sangry.png'
 		},
 		expressions: {
             cry: 'expressions/cry.png',
             talk: 'expressions/talk.png',
             happy: 'expressions/happy.png',
+			angry: 'expressions/angry.png'
         }
 	},
 	'j': {
@@ -488,11 +490,11 @@ monogatari.script ({
 		'hide character j happy with fadeOut',
 		'show character j speechless with fadeIn',
 		'j Don’t be so dramatic, it’s not a big deal. You are also having a great time, aren’t you?',
-		's:talk Is it for me or is it just for you? You are being so selfish!',
+		's:angry Is it for me or is it just for you? You are being so selfish!',
 		'hide character j speechless with fadeIn',
 		'show character j angry with fadeIn',
 		'j All of my friends don’t use condoms with their girlfriends, why are you the only one being such a drama queen?',
-		's:talk Then go dating with your friends! Bye bye!',
+		's:angry Then go dating with your friends! Bye bye!',
 		'hide character j angry with fadeIn',
 		'show image heart with fadeIn',
 		'You are irritated by Jonathan’s attitude and breaks up with him.',
@@ -513,9 +515,9 @@ monogatari.script ({
 		'j Well… You’re the one who didn‘t take the pills, and I don‘t know if this baby is actually mine.', 
 		'j Good luck.',
 		'hide character j surprise with fadeOut',
-		's:talk Wait what??? What do you mean??!!',
+		's:angry Wait what??? What do you mean??!!',
 		'(Your message is blocked)',
-		's:talk You blacklisted me???',
+		's:angry You blacklisted me???',
 		'(Your message is blocked)',
 		'show image heart with fadeIn',
 		'Jonathan blocked you after he found out you was pregnant. You couldn‘t find him anywhere and falls into despair.',
@@ -524,7 +526,7 @@ monogatari.script ({
 
 	'refuse': [
 		'You think: Hmm I do really like John and he’s very cute, but I’m just not sure about this. I’ve never done this before and neither have I given it too much thought. Also I know even with a condom it’s not guaranteed that I won’t get pregnant, and I would really not like to get pregnant so early.',
-		's Hmmm I’m not so sure, I don‘t think it is a proper time for us to do this',
+		's:talk Hmmm I’m not so sure, I don‘t think it is a proper time for us to do this',
 		'show character j speechless with fadeIn',
 		'j okay, fine.',
 		'show message refuse',
@@ -535,11 +537,11 @@ monogatari.script ({
 		's:talk Are you ghosting me now?? 😶',
 		'show character j speechless with fadeIn',
 		'Johnathan 5 hours later: I was busy all day',
-		's You were NOT! You were literally avoiding me. Are you mad cuz I said no on Friday??',
+		's:angry You were NOT! You were literally avoiding me. Are you mad cuz I said no on Friday??',
 		'hide character j speechless with fadeOut',
 		'show character j happy with fadeIn',
 		'j Nooo, it’s just that I know I’m gonna be good for you my bb don’t worry, I’m gonna treat you well. 😙',
-		's:talk I said I’m not sure and I’ll know when it’s a good time when I feel like it. 😐',
+		's:angry I said I’m not sure and I’ll know when it’s a good time when I feel like it. 😐',
 		'hide character j speechless with fadeOut',
 		'show character j angry with fadeIn',
 		'j Ugh you’re so boring, Alex’s gf already had sex with him',
@@ -706,9 +708,9 @@ monogatari.script ({
 		'j Holy cow! It‘s raining so bad!',
 		's:talk Yeah, it‘s weird. It is supposed to be a sunny day.',
 		'j I can‘t take this anymore. I should play games with Jack. It’s all blamed on you! Selena, you ruined my weekend!',
-		's:talk How come it is my fault!!! You decided to go with me. And I prepared all these things. How about you? You did nothing!',
+		's:angry How come it is my fault!!! You decided to go with me. And I prepared all these things. How about you? You did nothing!',
 		'j Why are you being so aggressive? Maybe you should learn from Anna to control your bad temper. She is way more mature than you.',
-		's ......',
+		's:angry ......',
 		{
 			'Choice': {
 				'1': {
@@ -744,7 +746,7 @@ monogatari.script ({
 		'show message gaslighting',
 		's:talk What does that mean?',
 		'a He‘s blaming things on you that are not even your fault!',
-		's:talk OMG! I didn’t realize that! This is such a toxic relationship.',
+		's:angry OMG! I didn’t realize that! This is such a toxic relationship.',
 		'a Yeah, talk to him. And see if he doesn‘t change the way he talks, you can just leave him.',
 		's:talk Sure do!',
 		'You and Anna talked for about an hour',
@@ -872,7 +874,8 @@ monogatari.script ({
 		'show character s cry at right with fadeIn',
 		'You were so sad and frustrated that you decided to throw and break things in your room. ',
 		's:talk Ahhhhh, why!!! ', 
-		'show background messyroom with fadeIn',
+		'show scene messyroom with fadeIn',
+		'show character s angry at right with fadeIn',
 		'Throwing a book to the closet and crying,',
 		'show image heart with fadeIn',
 		'Soon, your room became a mess. Although you release some of the stress after throwing things, you still feel down. You couldn’t accept the fact that you got rejected and even felt anger towards Jonathan. It was hard for you to pretend nothing happened between you and Jonathan for the next couple of weeks. Jonathan got tired of you and you two got drifted apart.',
@@ -893,7 +896,7 @@ monogatari.script ({
 		'j Nothing, I’m alright. Don’t really want to get into it.',
 		's:talk …I wasn’t going to say anything because I already knew that that would be your response, Jonathan. For the past month you’ve been going through some sort of man period. On and off, hot and cold, happy, sad. Not acting like yourself at all. I want to know what’s up. Tell me what’s bothering you lately. Is it me? Not happy with me?',
 		'j It is about you but not like what you think.',
-		's:talk Great. Now you’re talking to me in riddles. Can’t you give me a straight answer and tell me what the hell is going on already? How does it involve me?',
+		's:angry Great. Now you’re talking to me in riddles. Can’t you give me a straight answer and tell me what the hell is going on already? How does it involve me?',
 		'hide character j speechless with fadeOut',
 		'show character j angry with fadeIn',
 		'j You know, there are some freaking things I just don’t want to talk about and you have to keep pushing me and pushing me. Why isn’t that ever good enough? Why can’t you back off?',		
@@ -963,11 +966,11 @@ monogatari.script ({
 		's:talk I don’t care.',
 		'...',
 		'j Don’t play these stupid games with me, okay? Cause this shit is for real. I’m feeling real emotions about certain things and I don’t want to be played with.',
-		's:talk I don’t care.',
+		's:angry I don’t care.',
 		'j You drive me crazy.',
-		's:talk You drive ME crazy.',
+		's:angry You drive ME crazy.',
 		'j I don’t want to tell you just because you want me to tell—',
-		's:talk Fine!! Don’t!!!',
+		's:angry Fine!! Don’t!!!',
 		'hide character j angry with fadeOut',
 		'show character j speechless with fadeIn',
 		'j If I tell you it’s because I want to tell you. It’s that sort of thing!',
