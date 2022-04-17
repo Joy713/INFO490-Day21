@@ -2,14 +2,176 @@
 
 // Define the messages used in the game.
 monogatari.action ('message').messages ({
-	'Help': {
-		title: 'Help',
-		subtitle: 'Some useful Links',
+	'Education1': {
+		title: 'Education Resources',
+		subtitle: 'Useful articles that will help you with similar issues',
 		body: `
-			<p><a href='https://developers.monogatari.io/documentation/'>Documentation</a> - Everything you need to know.</p>
-			<p><a href='https://monogatari.io/demo/'>Demo</a> - A simple Demo.</p>
+			<p><a href='https://shorturl.at/enyUX/'>saying “No” to Sex</a></p>
+			<p><a href='https://shorturl.at/cgoKP/'>When to have sex?</a></p>
+			<p><a href='https://shorturl.at/pFGU2/'>Risks of not using a condom</a></p>
+			<p><a href='https://www.mayoclinic.org/tests-procedures/morning-after-pill/about/pac-20394730'>Side effects of morning-after pills</a></p>
+			<p><a href='https://shorturl.at/asAT5/'>Challenges of being a teenage parent</a></p>
+			<p><a href='https://shorturl.at/qwITX/'>What is sexual consent?</a></p>
 		`
-	}
+	},
+	'Education2': {
+		title: 'Education Resources',
+		subtitle: 'Useful articles that will help you with similar issues',
+		body: `
+			<p><a href='https://www.verywellmind.com/is-someone-gaslighting-you-4147470#:~:text=Gaslighting%20is%20a%20form%20of,question%20their%20judgments%20and%20reality.'>What is gaslighting?</a></p>
+			<p><a href='https://www.verywellmind.com/feeling-words-to-help-spouse-2300571'>Improve Your Relationship By Putting Feelings Into Words</a></p>
+			<p><a href='https://www.coupletalk.com/listentips201909/'>4 Ways to Deepen Conversations in Your Relationship</a></p>
+			<p><a href='https://www.ny.gov/teen-dating-violence-awareness-and-prevention/what-does-healthy-relationship-look#:~:text=Healthy%20relationships%20involve%20honesty%2C%20trust,or%20retaliation%2C%20and%20share%20decisions.'>What Does a Healthy Relationship Look Like?</a></p>
+			<p><a href='https://www.healthline.com/health/how-to-deal-with-gaslighting'>Ways to deal with gaslighting</a></p>
+			<p><a href='https://www.mentalhelp.net/blogs/whose-fault-is-it-how-blame-sabotages-relationships/'>How Blame Sabotages Relationships</a></p>
+		`
+	},
+	'Education3': {
+		title: 'Education Resources',
+		subtitle: 'Useful articles that will help you with similar issues',
+		body: `
+			<p><a href='https://www.goodhousekeeping.com/life/relationships/a30719895/how-to-deal-with-rejection/'>Deal rejection in a healthy way</a></p>
+			<p><a href='https://www.jedfoundation.org/resource/how-to-cope-with-sadness-and-depressive-feelings'>How to Cope with Sadness and Depressive Feelings</a></p>
+			<p><a href='https://www.healthline.com/health/how-to-release-anger#check-yourself'>11 ways to release anger</a></p>
+			<p><a href='https://www.artofmanliness.com/people/social-skills/how-to-comfort-someone-whos-sad-crying/ '>How to Comfort Someone Who’s Sad/Crying</a></p>
+			<p><a href='https://hellorelish.com/articles/how-to-reject-someone.html'>10 Tips for Rejecting Someone Nicely</a></p>
+		`
+	},
+	'Education4': {
+		title: 'Education Resources',
+		subtitle: 'Useful articles that will help you with similar issues',
+		body: `
+			<p><a href='https://www.healthnavigator.org.nz/healthy-living/a/argument-tips-for-having-a-healthy-argument/#:~:text=It's%20easy%20to%20interrupt%20or,each%20other%20a%20fair%20hearing.'>Tips for having a healthy argument</a></p>
+			<p><a href='https://www.verywellmind.com/feeling-words-to-help-spouse-2300571'>Improve Your Relationship By Putting Feelings Into Words</a></p>
+			<p><a href='https://www.coupletalk.com/listentips201909/'>4 Ways to Deepen Conversations in Your Relationship</a></p>
+			<p><a href='https://www.loveisrespect.org/resources/conflict-resolution/'>Conflicts resolution</a></p>
+			<p><a href='https://au.reachout.com/articles/managing-the-pressures-of-a-relationship'>Managing the pressures of a relationship</a></p>
+		`
+	},
+	'sad': {
+		title: 'How to cope with sadness?',
+		subtitle: '',
+		body: `
+			<ul>
+			<li>- Watching a favorite movie/show or looking at art, etc.</li>
+			<li>- Listening to or making music that expresses how you feel</li>
+			<li>- Eating a favorite snack or candy that you see as a treat</li>
+			<li>- Connecting with others or talking to a friend or loved one</li>
+			<li>- Moving your body like walking, working out, or playing sports</li>
+			</ul>
+			<p><a href='https://www.jedfoundation.org/resource/how-to-cope-with-sadness-and-depressive-feelings'>To read more</a></p>
+			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
+		`
+	},
+
+	'comfort': {
+		title: 'How to comfort someone who is sad?',
+		subtitle: '',
+		body: `
+			<ul>
+			<li>- “Witness” their feelings. </li>
+			<li>- Affirm that their feelings make sense.</li>
+			<li>- Show the person you understand their feelings. </li>
+			<li>- Don’t minimize their pain or try to cheer them up.</li>
+			<li>- Offer physical affection if appropriate.</li>
+			</ul>
+			<p><a href='https://www.artofmanliness.com/people/social-skills/how-to-comfort-someone-whos-sad-crying/'>To read more</a></p>
+			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
+		`
+	},
+
+	'refuse': {
+		title: 'How to refuse unwanted sex?',
+		subtitle: '',
+		body: `
+			<p><a href='https://shorturl.at/enyUX/'>saying “No” to Sex</a></p>
+			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
+		`
+	},
+	'sideeffect': {
+		title: 'Do you know the side effects of morning-after pills?',
+		subtitle: '',
+		body: `
+			<p>Side effects of the morning-after pill, which typically last only a few days, might include:</p>
+			<ul>
+				<li>- Nausea or vomiting</li>
+				<li>- Dizziness</li>
+				<li>- Fatigue</li>
+				<li>- Headache</li>
+				<li>- Breast tenderness</li>
+				<li>- Bleeding between periods or heavier menstrual bleeding</li>
+				<li>- Lower abdominal pain or cramps</li>
+			</ul>
+			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
+		`
+	},
+	'nocondom': {
+		title: 'What are the risks of not using a condom',
+		subtitle: '',
+		body: `
+			<ul>
+				<li>- Higher risk of STI transmission</li>
+				<li>- Higher chance of contracting HIV</li>
+				<li>- Risk of pregnancy</li>
+			</ul>
+			<p><a href='https://shorturl.at/pFGU2/'>To read more</a></p>
+			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
+		`
+	},
+	'teenmom': {
+		title: 'What problems might adolescent mothers face?',
+		subtitle: '',
+		body: `
+			<p>Adolescent mothers and their offspring are a high risk group broth physically and emotionally. </p>
+			<p>Poverty, malnutrition, complications of pregnancy, emotional problems such as depression, drug and alcohol use, are all risks for the mother. Children are also at greater risk for physical, cognitive and emotional problems. </p>
+			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
+		`
+	},
+	'consent': {
+		title: 'Understand the word: Consent',
+		subtitle: '',
+		body: `
+			<p>In general, consent is an active, verbal agreement to engage in sexual activity with someone. Sexual activity without your consent is rape or sexual assault.</p>
+			<p><a href='https://shorturl.at/qwITX/'>To read more</a></p>
+			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
+		`
+	},
+	'gaslighting': {
+		title: 'What is gaslighting?',
+		subtitle: '',
+		body: `
+			<p>Gaslighting is a form of manipulation that often occurs in abusive relationships. It is a covert type of emotional abuse where the bully or abuser misleads the target, creating a false narrative and making them question their judgments and reality.</p>
+			<p><a href='https://www.verywellmind.com/is-someone-gaslighting-you-4147470#:~:text=Gaslighting%20is%20a%20form%20of,question%20their%20judgments%20and%20reality.'>To read more</a></p>
+			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
+		`
+	},
+	'feeling': {
+		title: 'How to Talk About Feelings',
+		subtitle: '',
+		body: `
+				<p>- Explain that you have something to say.</p>
+				<p>- Show empathy for what your partner is feeling.</p>
+				<p>- Use "I" statements to help explain what happened.</p>
+				<p>- Don't make general statements about your partner's behavior</p>
+				<p>- If you want your partner to do something differently, be clear about what you're asking.</p>
+			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
+		`
+	},
+	'conflict': {
+		title: 'Conflicts resolution',
+		subtitle: '',
+		body: `
+			<ul>
+				<li>- Establish boundaries</li>
+				<li>- Find the real issue</li>
+				<li>- Agree to disagree</li>
+				<li>- Compromise when possible</li>
+				<li>- Consider it all</li>
+			</ul>
+			<p><a href='https://www.loveisrespect.org/resources/conflict-resolution/'>To read more</a></p>
+			<p>Feel free to close this message. The same resource will show up at the end of the game too.</p>
+		`
+	},
 });
 
 // Define the notifications used in the game
@@ -270,6 +432,7 @@ monogatari.script ({
 	'noCondom': [
 		'hide character j speechless with fadeOut',
 		'You and Johnathan have sex without condom.',
+		'show message nocondom',
 		'show background default with fadeIn',
 		'show image pill center with fadeIn',
 		'After the sex, you are thingking about whether to take an emergency birth control pill. you are concerning that the pill might affect your health.',
@@ -308,6 +471,7 @@ monogatari.script ({
 	],
 
 	'acceptPill':[
+		'show message sideeffect',
 		's:talk Humm… Okay.',
 		'hide character j happy with fadeOut',
 		'After a month, your periods become irregular due to your constant use of emergency birth control pills.',
@@ -316,7 +480,7 @@ monogatari.script ({
 		'hide character j angry with fadeOut',
 		'show image heart with fadeIn',
 		'Eventually, you two broke up over Jonathan‘s cheating.',
-		'end'
+		'jump education1'
 	],
 
 	'resusePill':[
@@ -332,13 +496,14 @@ monogatari.script ({
 		'hide character j angry with fadeIn',
 		'show image heart with fadeIn',
 		'You are irritated by Jonathan’s attitude and breaks up with him.',
-		'end'
+		'jump education1'
 	],
 
 	'noPill':[
 		'hide image pill with fadeOut',
 		'You decided to not take the pill. You also think that one time of not using condom won‘t get you pregnanet.',
 		'One month later, you noticed that your period was not coming properly and went for a pregnancy test, which revealed that you were pregnant. You are very panicked and told Jonathan about it over message.',
+		'show message teenmom',
 		's:cry Omg… I’m pregnant, babe.',
 		'show character j surprise with fadeIn',
 		'j What??? Didn’t you take birth control pills after that day???',
@@ -354,7 +519,7 @@ monogatari.script ({
 		'(Your message is blocked)',
 		'show image heart with fadeIn',
 		'Jonathan blocked you after he found out you was pregnant. You couldn‘t find him anywhere and falls into despair.',
-		'end'
+		'jump education1'
 	],
 
 	'refuse': [
@@ -362,6 +527,7 @@ monogatari.script ({
 		's Hmmm I’m not so sure, I don‘t think it is a proper time for us to do this',
 		'show character j speechless with fadeIn',
 		'j okay, fine.',
+		'show message refuse',
 		'hide character j speechless with fadeOut',
 		'Two days later. You are texting Jonathan.',
 		's:happy Good morning love!! How’s your exam? Omg this the sub is sooo annoying 😩',
@@ -427,7 +593,31 @@ monogatari.script ({
 		'm Oh! Are you sure?',
 		's:happy Yup! We’ve been learning a lot together, and I think I know how to protect myself in sex now, and I‘m sure you‘ll protect me, too',
 		'm I absolutely will! I’ll get what we need real quick',
+		'show message consent',
 		'You and Matthew have a nice sexual experience❤️',
+		'jump education1'
+	],
+
+	'education1': [
+		'show scene default with fadeIn',
+		'show message Education1',
+		'end'
+	],
+
+	'education2': [
+		'show scene default with fadeIn',
+		'show message Education2',
+		'end'
+	],
+	'education3': [
+		'show scene default with fadeIn',
+		'show message Education3',
+		'end'
+	],
+
+	'education4': [
+		'show scene default with fadeIn',
+		'show message Education4',
 		'end'
 	],
 
@@ -501,7 +691,7 @@ monogatari.script ({
 		'show character j happy with fadeIn',
 		'j Although it is a little bit annoying, it’s fine. We can still have a good time babe. Let’s build our tent!',
 		'You and Jonathan had a great time. Jonathan’s gentleness and understanding makes your relationship with him more stable.',
-		'end'
+		'jump education2'
 	],
 	
 	'noTell':[
@@ -509,6 +699,7 @@ monogatari.script ({
 		'show character j happy with fadeIn',
 		's:happy Everything was fine. I was just not that hungry.',
 		'j Ok, babe. I am tired. Good night!',
+		'show message feeling',
 		'show scene camp with fadeIn',
 		'On the weekend, Selena and Johnathan are at the camping place.',
 		'show character j angry with fadeIn',
@@ -536,7 +727,7 @@ monogatari.script ({
 		'show scene default with fadeIn',
 		'show image heart with fadeIn',
 		'After several fights, you ran out of your patience and you felt miserable about your life. Your boyfriend Jonathan broke up with you. You tried to commit a suicide​​ at your apartment but your friends found out and sent you to the emergency room.',
-		'end'
+		'jump eduaction2'
 	],
 	'friend':[
 		'show scene room with fadeIn',
@@ -550,6 +741,7 @@ monogatari.script ({
 		'a About what?',
 		's:talk Well, he just complains about the weather, the road...almost everything! And he literally blamed everything on me! Well, I do feel sorry for him can‘t play video games with his friends.',
 		'a What? Girl! He‘s trying to gas lighting on you! This is not right!',
+		'show message gaslighting',
 		's:talk What does that mean?',
 		'a He‘s blaming things on you that are not even your fault!',
 		's:talk OMG! I didn’t realize that! This is such a toxic relationship.',
@@ -560,7 +752,7 @@ monogatari.script ({
 		'show scene default with fadeIn',
 		'show image heart with fadeIn',
 		'You talked to Jonathan about the toxic relationship. But Jonathan continued to gaslighting you emotionally. So you broke up with Jonathan and moved on.',
-		'end'
+		'jump education2'
 	],
 
 	'StoryC': [
@@ -620,6 +812,7 @@ monogatari.script ({
 		'At Home',
 		'show character s cry at right with fadeIn',
 		'You cried hard in your bedroom. After 3 hours, you were still not feeling well. You want to find ways to mitigate your feelings.',
+		'show message sad',
 		{
 			'Choice': {
 				'A': {
@@ -654,9 +847,10 @@ monogatari.script ({
 		'hide character a normal with fadeOut',
 		'show character a happy with fadeIn',
 		'a Exactly! Selena, you are brave. Give yourself credit for trying! One refusal means nothing.',
+		'show message comfort',
 		'…',
 		'You chatted with Anna for an hour and you felt so much better. She encouraged you to be positive and her warm words worked pretty well. It was reassuring to know that someone understands what you are going through and how it feels. You decided to make things move on and maintain the friendship between you and Jonathan. ',
-		'end'
+		'jump education3'
 	],
 	'CB2': [
 		'show image book with fadeIn',
@@ -672,7 +866,7 @@ monogatari.script ({
 		'hide character s cry with fadeOut',
 		'show character s happy at right with fadeIn',
 		'Being rejected does not mean you are not liked, valued, or important. It just means that one time, in one situation, with one person, things did not work out. You were being honest with yourself and felt much better. You learned how to deal with rejection. You decided to make things move on and maintain the friendship between you and Jonathan. ',
-		'end'
+		'jump education3'
 	],
 	'CC2': [
 		'show character s cry at right with fadeIn',
@@ -682,7 +876,7 @@ monogatari.script ({
 		'Throwing a book to the closet and crying,',
 		'show image heart with fadeIn',
 		'Soon, your room became a mess. Although you release some of the stress after throwing things, you still feel down. You couldn’t accept the fact that you got rejected and even felt anger towards Jonathan. It was hard for you to pretend nothing happened between you and Jonathan for the next couple of weeks. Jonathan got tired of you and you two got drifted apart.',
-		'end'
+		'jump education3'
 	],
 
 
@@ -705,6 +899,7 @@ monogatari.script ({
 		'j You know, there are some freaking things I just don’t want to talk about and you have to keep pushing me and pushing me. Why isn’t that ever good enough? Why can’t you back off?',		
 		's:talk If I was acting up and down like you’ve been, I guarantee you would be more pissed off about it.',
 		'j Yeah, well I don’t want to talk about it. So leave it alone…',
+		'show message feeling',
 		{
 			'Choice': {
 				'A': {
@@ -748,16 +943,17 @@ monogatari.script ({
 		'j I love you too, baby. I do…I do.',
 		's:happy Just please promise me next time you’ll talk to me ok? I feel so beat down when you’re just silent like that.',
 		'j Sure I promise you, I’ll talk to you more. I’m sorry I acted like that and made you feel that way.',
-		'end'
+		'jump education4'
 	],
 	'DB1': [
+		'show message conflict',
 		's:talk Ok whatever, I don’t want to be responsible for your inability to communicate anyways',
 		'j Oh so now it’s my fault just because I’m not ready to tell you?',
 		's:talk I don’t know when you will be ready or whatever your problem is, I’m tired of having to always take care of you emotionally rather than having you directly communicate with me. ',
 		'j Whoa ok, so I guess I will just never be able to have different communication than you do?',
 		's:talk Fine, then don’t tell me! ',
 		'j If I tell you it’s because I want to tell you. It’s that sort of thing!',
-		'end'
+		'jump education4'
 	],
 	'DC1': [
 		's:talk I’m not going to leave it alone. I feel that this is something serious and I won’t back away until you tell me.',
@@ -787,6 +983,6 @@ monogatari.script ({
 		'hide character j angry with fadeOut',
 		'show image heart with fadeIn',
 		'You and Jonathan had several fights in the next couple months. You kept talking and Jonathan refused to communicate with you. You two broke up due to this.',
-		'end'
+		'jump education4'
 	]	
 });
