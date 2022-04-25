@@ -98,7 +98,7 @@ button:hover {
 
 /* Text Box styling */
 [data-component="text-box"] {
-
+	font-size: 1.3em;
 }
 
 /* Character Name Style */
@@ -108,7 +108,7 @@ button:hover {
 
 /* Style for Centered Text */
 [data-component="centered-dialog"] {
-	
+
 }
 
 /* Character Images Styles */
@@ -150,6 +150,10 @@ button:hover {
 /* Quick Menu Buttons Icon Style */
 [data-component="quick-menu"] > span > .fa {
 
+}
+
+[data-component="message-modal"] {
+	opacity: 0.86;
 }
 
 /**

@@ -206,7 +206,7 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
-
+	'backgroundMusic':'background.mp3'
 });
 
 // Define the voice files used in the game.
@@ -268,7 +268,7 @@ monogatari.characters ({
 	},
 	'j': {
 		name: 'Jonathan',
-		color: '#0000FF',
+		color: '#ADD8E6',
 		sprites: {
 			happy: 'jHappy.png',
 			shy: 'jShy.png',
@@ -288,7 +288,7 @@ monogatari.characters ({
 	},
 	'm': {
 		name: 'Matthew',
-		color: '#8B4513',
+		color: '#00FF00',
 		sprites: {
 			happy: 'mhappy.png',
 			talk: 'mtalk.png',
@@ -297,7 +297,7 @@ monogatari.characters ({
 	},
 	'ja': {
 		name: 'Jack',
-		color: 	'#4B0082',
+		color: 	'#00FF00',
 		sprites: {
 			talk: 'jackTalk.png',
 			game: 'jackGame.png',
@@ -309,6 +309,7 @@ monogatari.script ({
 	// The game starts here.
 	'Start': [
 		'show background start-background',
+		'play music backgroundMusic with loop',
 		{
 			'Input': {
 				'Text': 'What is your name?',
@@ -333,10 +334,10 @@ monogatari.script ({
 				'Warning': 'You must enter a name!'
 			}
 		},
-		'Hi {{player.name}}, Welcome to LeX!',
+		'Hi {{player.name}}, Welcome to LEX!',
 		{
 			'Choice': {
-				'Dialog': 'Do you want an introduction about the LeX Project',
+				'Dialog': 'Do you want an introduction about the LEX Project',
 				'Yes': {
 					'Text': 'Yes',
 					'Do': 'jump Yes'
@@ -350,32 +351,33 @@ monogatari.script ({
 	],
 
 	'Yes': [
-		'Thats awesome!',
-		'Then you are ready to go ahead and create an amazing Game!',
-		'I can’t wait to see what story you’ll tell!',
+		'LEX stands for Love and Sex. This is an interactive storytelling game to showcase real-life struggles of a teenage girl newly entering puberty and relationships.',
+		'Although many teenagers receive sex education on the physical aspects of sexual development, there is a lack of emphasis psychological and emotional education.',
+		'We want to tell real stories that are deeply personal and relatable, and reflect real-life experiences of people newly entering relationships.',
+		'Thus we created an interactive storytelling game with resources to help users understand conflicts and issues in relationships from an outside perspective and learn to mitigate them with his knowledge and the  resources.',
 		'jump No'
 	],
 
 	'No': [
 		'Okay. Let’s start the game then.',
-		'In the game, you will be playing the role of Selena, who is a high school student. You will go through her concerns or problems in her relationship and make decisions for her.',
+		'In the game, you will be playing the role of Selena, a high school student at the LEX Academy. You will go through her concerns or problems in her relationship and make decisions for her.',
 		{
 			'Choice': {
-				'Dialog': 'Choose an alphabet to start your game. Different alphabet corresponds to a different story!',
+				'Dialog': 'Choose a storyline to start your game. Different option corresponds to a different story!',
 				'A': {
-					'Text': 'A',
+					'Text': 'Story A',
 					'Do': 'jump StoryA'
 				},
 				'B': {
-					'Text': 'B',
+					'Text': 'Story B',
 					'Do': 'jump StoryB'
 				},
 				'C': {
-					'Text': 'C',
+					'Text': 'Story C',
 					'Do': 'jump StoryC'
 				},
 				'D': {
-					'Text': 'D',
+					'Text': 'Story D',
 					'Do': 'jump StoryD'
 				}
 			}
@@ -385,13 +387,13 @@ monogatari.script ({
 	'StoryA': [
 		'show background default',
 		'show character j happy with fadeIn',
-		'Your name is Selena and you are a 10th grader at the LeX Academy. You have a boyfriend whose name is Jonathan. You two have dated for 2 months now',
+		'Your name is Selena and you are a 10th grader at the LEX Academy. You have a boyfriend, Jonathan. You two have dated for 2 months now',
 		'j Hey love, Netflix and chill at your place tonight?', 
-		's:happy Sure bb!',
+		's:happy Sure babe!',
 		'show scene home with fadeIn',
 		'7p.m. at Jonathan’s home',
 		'show scene room with fadeIn',
-		'Jonathan and you cuddle in bed and watch Euphoria together, aftering 20 minutes you’re making out a bit. Jonathan gradually makes the kisses more sexual and makes it clear that he wants to have sex.',
+		'Jonathan and you are cuddling in bed and watching Euphoria together. After 20 minutes you’re making out a bit. Jonathan gradually makes the kisses more sexual and makes it clear that he wants to go deeper.',
 		{
 			'Choice': {
 				'Dialog': 'What is your opinion on this?',
@@ -626,26 +628,26 @@ monogatari.script ({
 	'StoryB': [
 		'show scene highschool with fadeIn',
 		'show character j happy with fadeIn',
-		'Your name is Selena and you are a 10th grader at the LeX Academy. You have a boyfriend, Jonathan, who is also a 10th grader at your High School.',
+		'Your name is Selena and you are a 10th grader at the LEX Academy. You have a boyfriend, Jonathan, who is also a 10th grader at your High School.',
 		'One day at school',
 		's:happy Hey babe! Do you want to have dinner and hang out tonight with my friends?',
 		'j Oh, sure!',
-		's:happy Do you know Anna? She is in your grade as well. You guys might have taken the same classes. Also, Jack and Alison will join us later tonight.',
+		's:happy Do you know Anna? She is a sophmore as well. You guys might have taken the same classes. Also, Jack will join us later tonight.',
 		'j Sounds cool.',
 		'show scene dinner with fadeIn',
 		'At the restaurant Selena, Jonathan, and Anna came early.',
 		'show character a happy with fadeIn',
 		's:happy So, this is Anna. She has been my best friend since middle school. And she is in the band as well.',
 		'hide character a happy with fadeOut',
-		'show character j happy with fadeIn',
-		'j Hi! I am Johnathan and I am in the band as well. If you have any questions, feel free to ask me.',
+		'show character j happy',
+		'j Hi! I am Johnathan. Nice to meet you. I don‘t know you are in the band! If you have any questions, feel free to ask me.',
 		'hide character j happy with fadeOut',
-		'show character a happy with fadeIn',
+		'show character a happy',
 		'a Well, thanks!',
 		'hide character a happy with fadeOut',
 		'show character j happy at left with fadeIn',
 		'show character ja talk at right with fadeIn',
-		'At the dinner, Jonathan and Anna talked a lot of things about band experience and complaints about classes. You felt kind of lonely since you did not have the same experience. Then Alison and Jack came. Johnathan and Jack began to talk about games and sports.',
+		'At the dinner, Jonathan and Anna talked a lot of things about band experience and complainted about classes. You felt kind of lonely since you did not have the same experience. Then Alison and Jack came. Johnathan and Jack began to talk about games and sports.',
 		'j How‘s it going?', 
 		'ja Good. I watched the football game yesterday. Great game！',
 		'j No way! I missed that. Oh, I was watching a stupid love story at the movie theater.',
@@ -729,7 +731,7 @@ monogatari.script ({
 		'show scene default with fadeIn',
 		'show image heart with fadeIn',
 		'After several fights, you ran out of your patience and you felt miserable about your life. Your boyfriend Jonathan broke up with you. You tried to commit a suicide​​ at your apartment but your friends found out and sent you to the emergency room.',
-		'jump eduaction2'
+		'jump education2'
 	],
 	'friend':[
 		'show scene room with fadeIn',
@@ -760,7 +762,7 @@ monogatari.script ({
 	'StoryC': [
 		'show scene highschool with fadeIn',
 		'show character j happy with fadeIn',
-		'Your name is Selena and you are a 10th grader at the LeX Academy. Jonathan, who is also a 10th grader, is a member of your High School’s varsity basketball team. You and him are good friends who usually hang out. However, Jonathan did not know that you have had a deep crush on him for 6 months.',
+		'Your name is Selena and you are a 10th grader at the LEX Academy. Jonathan, who is also a 10th grader, is a member of your High School’s varsity basketball team. You and him are good friends who usually hang out. However, Jonathan did not know that you have had a deep crush on him for 6 months.',
 		'hide character j happy with fadeOut',
 		'Today, you decided to tell Jonathan about your feelings towards him.',
 		'After School',
@@ -886,7 +888,7 @@ monogatari.script ({
 	'StoryD': [
 		'show scene highschool with fadeIn',
 		'show character j happy with fadeIn',
-		'Your name is Selena and you are a 10th grader at the LeX Academy. You have a boyfriend, Jonathan, who is also a 10th grader at your High School.',
+		'Your name is Selena and you are a 10th grader at the LEX Academy. You have a boyfriend, Jonathan, who is also a 10th grader at your High School.',
 		'show scene room with fadeIn',
 		'You have just gotten back home from school to find Jonathan looking unhappy.',
 		'show character j speechless with fadeIn',
