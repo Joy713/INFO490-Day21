@@ -370,7 +370,10 @@ monogatari.script ({
 
 	'No': [
 		'Okay. Let’s start the game then.',
+		'show background default',
+		'show character s happy at right with fadeIn',
 		'In the game, you will be playing the role of Selena, a high school student at the LEX Academy. You will go through her concerns or problems in her relationship and make decisions for her.',
+		'hide character s happy with fadeOut',
 		{
 			'Choice': {
 				'Dialog': 'Choose a storyline to start your game. Different option corresponds to a different story!',
