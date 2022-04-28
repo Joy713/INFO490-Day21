@@ -216,7 +216,11 @@ monogatari.assets ('voices', {
 
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
-
+	'cry':'cry.wav',
+	'throw':'throwbook.wav',
+	'rain':'rain.wav',
+	'dinner':'dinner.wav',
+	'phone':'phone.wav'
 });
 
 // Define the videos used in the game.
@@ -365,19 +369,19 @@ monogatari.script ({
 			'Choice': {
 				'Dialog': 'Choose a storyline to start your game. Different option corresponds to a different story!',
 				'A': {
-					'Text': 'Story A',
+					'Text': 'Story A (about different attitudes towards sex)',
 					'Do': 'jump StoryA'
 				},
 				'B': {
-					'Text': 'Story B',
+					'Text': 'Story B (about boundaries in a relationship)',
 					'Do': 'jump StoryB'
 				},
 				'C': {
-					'Text': 'Story C',
+					'Text': 'Story C (about confessing love)',
 					'Do': 'jump StoryC'
 				},
 				'D': {
-					'Text': 'Story D',
+					'Text': 'Story D (about communication and arguments)',
 					'Do': 'jump StoryD'
 				}
 			}
@@ -569,9 +573,11 @@ monogatari.script ({
 		'show character m talk with fadeIn',
 		'm What’s wrong?',
 		's:talk Sorry, I‘m not in the mood for a movie today. I’ll see you tmrw at school. (stand up and leave)',
+		'play sound phone',
 		'hide character m talk with fadeOut',
 		'show character m call with fadeIn',
 		'You got home and Matthew called you',
+		'stop sound phone',
 		'm Did you get home babe?',
 		's:talk Yea',
 		'm Did I just do something to make you uncomfortable? I apologize if there is',
@@ -635,6 +641,7 @@ monogatari.script ({
 		's:happy Do you know Anna? She is a sophmore as well. You guys might have taken the same classes. Also, Jack will join us later tonight.',
 		'j Sounds cool.',
 		'show scene dinner with fadeIn',
+		'play sound dinner',
 		'At the restaurant Selena, Jonathan, and Anna came early.',
 		'show character a happy with fadeIn',
 		's:happy So, this is Anna. She has been my best friend since middle school. And she is in the band as well.',
@@ -647,6 +654,7 @@ monogatari.script ({
 		'hide character a happy with fadeOut',
 		'show character j happy at left with fadeIn',
 		'show character ja talk at right with fadeIn',
+		'stop sound dinner',
 		'At the dinner, Jonathan and Anna talked a lot of things about band experience and complainted about classes. You felt kind of lonely since you did not have the same experience. Then Alison and Jack came. Johnathan and Jack began to talk about games and sports.',
 		'j How‘s it going?', 
 		'ja Good. I watched the football game yesterday. Great game！',
@@ -688,10 +696,12 @@ monogatari.script ({
 		'j How come I just focus on my game? I do care about you. I am sorry that I make you uncomfortable. And it‘s Okay to think that way. Thanks for telling me your true feelings. I love you babe.',
 		'show scene camp with fadeIn',
 		'On the weekend, Selena and Johnathan are at the camping place.',
+		'play sound rain',
 		'show character j surprise with fadeIn',
 		'j Holy cow! It‘s raining so bad!',
 		's:talk Yeah, it‘s weird. It is supposed to be a sunny day.',
 		'hide character j surprise with fadeOut',
+		'stop sound rain',
 		'show character j happy with fadeIn',
 		'j Although it is a little bit annoying, it’s fine. We can still have a good time babe. Let’s build our tent!',
 		'You and Jonathan had a great time. Jonathan’s gentleness and understanding makes your relationship with him more stable.',
@@ -705,6 +715,7 @@ monogatari.script ({
 		'j Ok, babe. I am tired. Good night!',
 		'show message feeling',
 		'show scene camp with fadeIn',
+		'play sound rain',
 		'On the weekend, Selena and Johnathan are at the camping place.',
 		'show character j angry with fadeIn',
 		'j Holy cow! It‘s raining so bad!',
@@ -713,6 +724,7 @@ monogatari.script ({
 		's:angry How come it is my fault!!! You decided to go with me. And I prepared all these things. How about you? You did nothing!',
 		'j Why are you being so aggressive? Maybe you should learn from Anna to control your bad temper. She is way more mature than you.',
 		's:angry ......',
+		'stop sound rain',
 		{
 			'Choice': {
 				'1': {
@@ -735,8 +747,10 @@ monogatari.script ({
 	],
 	'friend':[
 		'show scene room with fadeIn',
+		'play sound phone',
 		'You called your friend Anna when you got home',
 		'show character a happy with fadeIn',
+		'stop sound phone',
 		's:talk Remember that night we were having dinner together with Jonathan?',
 		'a Oh yeah? What happened?',
 		's:talk Well we went camping that weekend and we had a serious fight.',
@@ -815,7 +829,9 @@ monogatari.script ({
 		'show scene room with fadeIn',
 		'At Home',
 		'show character s cry at right with fadeIn',
+		'play sound cry',
 		'You cried hard in your bedroom. After 3 hours, you were still not feeling well. You want to find ways to mitigate your feelings.',
+		'stop sound cry',
 		'show message sad',
 		{
 			'Choice': {
@@ -835,9 +851,11 @@ monogatari.script ({
 		}
 	],
 	'CA2': [
+		'play sound phone',
 		'You decided to call your friend, Anna, to release emotion. You told Anna all the details.',
 		'hide character s cry with fadeOut',
 		'show character a normal with fadeIn',
+		'stop sound phone',
 		'a Do you want me to come over? ',
 		's:cry I’m fine, thank you for asking though. I feel so much better after talking to you. ',
 		'hide character a normal with fadeOut',
@@ -875,11 +893,16 @@ monogatari.script ({
 	'CC2': [
 		'show character s cry at right with fadeIn',
 		'You were so sad and frustrated that you decided to throw and break things in your room. ',
+		'play sound throw',
 		's:talk Ahhhhh, why!!! ', 
+		'play sound throw',
 		'show scene messyroom with fadeIn',
 		'show character s angry at right with fadeIn',
+		'play sound throw',
+		'play sound cry',
 		'Throwing a book to the closet and crying,',
 		'show image heart with fadeIn',
+		'stop sound cry',
 		'Soon, your room became a mess. Although you release some of the stress after throwing things, you still feel down. You couldn’t accept the fact that you got rejected and even felt anger towards Jonathan. It was hard for you to pretend nothing happened between you and Jonathan for the next couple of weeks. Jonathan got tired of you and you two got drifted apart.',
 		'jump education3'
 	],
