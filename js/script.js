@@ -195,7 +195,11 @@ monogatari.action ('canvas').objects ({
 
 // Credits of the people involved in the creation of this awesome game
 monogatari.configuration ('credits', {
-
+	"Developers": {
+		"Artist": "Whitney",
+		"Script Writer": "Catherine, Joy, Susan, Whitney",
+		"Code Writer": "Catherine, Joy"
+	}
 });
 
 
@@ -220,7 +224,9 @@ monogatari.assets ('sounds', {
 	'throw':'throwbook.wav',
 	'rain':'rain.wav',
 	'dinner':'dinner.wav',
-	'phone':'phone.wav'
+	'phone':'phone.wav',
+	'heartbeat':'heartbeat.wav',
+	'argue':'argue.wav'
 });
 
 // Define the videos used in the game.
@@ -313,7 +319,7 @@ monogatari.script ({
 	// The game starts here.
 	'Start': [
 		'show background start-background',
-		'play music backgroundMusic with loop',
+		'play music backgroundMusic with loop volume 70',
 		{
 			'Input': {
 				'Text': 'What is your name?',
@@ -355,10 +361,10 @@ monogatari.script ({
 	],
 
 	'Yes': [
-		'LEX stands for Love and Sex. This is an interactive storytelling game to showcase real-life struggles of a teenage girl newly entering puberty and relationships.',
-		'Although many teenagers receive sex education on the physical aspects of sexual development, there is a lack of emphasis psychological and emotional education.',
-		'We want to tell real stories that are deeply personal and relatable, and reflect real-life experiences of people newly entering relationships.',
-		'Thus we created an interactive storytelling game with resources to help users understand conflicts and issues in relationships from an outside perspective and learn to mitigate them with his knowledge and the  resources.',
+		'centered <div style="opacity:85%; color:black; font-size:1.2em; background-color: white; width: 800px; padding: 50px; margin:10px">LEX stands for Love and Sex. This is an interactive storytelling game to showcase real-life struggles of a teenage girl newly entering puberty and relationships.</div>',
+		'centered <div style="opacity:85%; color:black; font-size:1.2em; background-color: white; width: 800px; padding: 50px; margin:10px">Although many teenagers receive sex education on the physical aspects of sexual development, there is a lack of emphasis psychological and emotional education.</div>',
+		'centered <div style="opacity:85%; color:black; font-size:1.2em; background-color: white; width: 800px; padding: 50px; margin:10px">We want to tell real stories that are deeply personal and relatable, and reflect real-life experiences of people newly entering relationships. </div>',
+		'centered <div style="opacity:85%; color:black; font-size:1.2em; background-color: white; width: 800px; padding: 50px; margin:10px">Thus we created an interactive storytelling game with resources to help users understand conflicts and issues in relationships from an outside perspective and learn to mitigate them with his knowledge and the resources.</div>',
 		'jump No'
 	],
 
@@ -522,11 +528,13 @@ monogatari.script ({
 		'j Good luck.',
 		'hide character j surprise with fadeOut',
 		's:angry Wait what??? What do you mean??!!',
-		'(Your message is blocked)',
+		'centered (Your message is blocked)',
 		's:angry You blacklisted me???',
-		'(Your message is blocked)',
+		'centered (Your message is blocked)',
 		'show image heart with fadeIn',
-		'Jonathan blocked you after he found out you was pregnant. You couldn‘t find him anywhere and falls into despair.',
+		'Jonathan blocked you after he found out you was pregnant. You couldn‘t find him anywhere. You told your parents about this, and took a year off of high school.',
+		'While your peers were playing games or reading history books, you were reading pregnancy websites, taking prenatal vitamins, and going to all of your checkups. When you went back to the school, most of your friends have already been graduated and you felt left out.',
+		'You even need to rush to the nursery sometimes during the school time. You fell into despair.',
 		'jump education1'
 	],
 
@@ -610,24 +618,50 @@ monogatari.script ({
 
 	'education1': [
 		'show scene default with fadeIn',
-		'show message Education1',
+		'nvl <style>p {text-align: center;} h2 {text-align: center; margin-top: 50px;} h3 {text-align: center; margin-bottom: 30px;}</style> <h2>Education Resources</h2> <h3>Useful articles that will help you with similar issues</h3> <p style="text-decoration: underline;"><a href="https://www.plannedparenthood.org/learn/teens/relationships/all-about-communication/saying-no-sex" target="_blank">saying “No” to Sex</a></p> <p style="text-decoration: underline;"><a href="https://www.businessinsider.com/when-to-start-having-sex-in-relationship-2017-2#:~:text=Harry%20Metcalfe%2FFlickr%20Based%20on,time%20to%20start%20having%20sex." target="_blank">When to have sex?</a></p> <p style="text-decoration: underline;"><a href="https://www.healthline.com/health/hiv/risks-sex-without-condoms#birthcontrol-and-sti-risk" target="_blank">Risks of not using a condom</a></p> <p style="text-decoration: underline;"><a href="https://www.mayoclinic.org/tests-procedures/morning-after-pill/about/pac-20394730" target="_blank">Side effects of morning-after pills</a></p> <p style="text-decoration: underline;"><a href="https://www.texasadoptioncenter.org/blog/challenges-of-being-a-teenage-parent/" target="_blank">Challenges of being a teenage parent</a></p> <p style="text-decoration: underline;"><a href="https://www.mycallisto.org/cresources/language?gclid=Cj0KCQjw0umSBhDrARIsAH7FCofa21lVm7eSJx8T7Z3nTH68QftiORKyjQ6bEGc5B-qwvm8eajy4ZO0aAtzKEALw_wcB" target="_blank">What is sexual consent?</a></p>', 
+		'wait',
+		'wait',
+		'wait',
+		'wait',
+		'wait',
+		'wait',
+		'Thank you for playing the game. Please feel free to choose other storylines and restart the game!',
 		'end'
 	],
 
 	'education2': [
 		'show scene default with fadeIn',
-		'show message Education2',
+		'nvl <style>p {text-align: center;} h2 {text-align: center; margin-top: 50px;} h3 {text-align: center; margin-bottom: 30px;}</style> <h2>Education Resources</h2> <h3>Useful articles that will help you with similar issues</h3> <p style="text-decoration: underline;"><a href="https://www.verywellmind.com/is-someone-gaslighting-you-4147470#:~:text=Gaslighting%20is%20a%20form%20of,question%20their%20judgments%20and%20reality." target="_blank">What is gaslighting?</a></p> <p style="text-decoration: underline;"><a href="https://www.verywellmind.com/feeling-words-to-help-spouse-2300571" target="_blank">Improve Your Relationship By Putting Feelings Into Words</a></p> <p style="text-decoration: underline;"><a href="https://www.coupletalk.com/listentips201909/" target="_blank">4 Ways to Deepen Conversations in Your Relationship</a></p> <p style="text-decoration: underline;"><a href="https://www.ny.gov/teen-dating-violence-awareness-and-prevention/what-does-healthy-relationship-look#:~:text=Healthy%20relationships%20involve%20honesty%2C%20trust,or%20retaliation%2C%20and%20share%20decisions." target="_blank">What Does a Healthy Relationship Look Like?</a></p> <p style="text-decoration: underline;"><a href="https://www.healthline.com/health/how-to-deal-with-gaslighting" target="_blank">Ways to deal with gaslighting</a></p> <p style="text-decoration: underline;"><a href="https://www.mentalhelp.net/blogs/whose-fault-is-it-how-blame-sabotages-relationships/" target="_blank">How Blame Sabotages Relationships</a></p>', 
+		'wait',
+		'wait',
+		'wait',
+		'wait',
+		'wait',
+		'wait',
+		'Thank you for playing the game. Please feel free to choose other storylines and restart the game!',
 		'end'
 	],
 	'education3': [
 		'show scene default with fadeIn',
-		'show message Education3',
+		'nvl <style>p {text-align: center;} h2 {text-align: center; margin-top: 50px;} h3 {text-align: center; margin-bottom: 30px;}</style> <h2>Education Resources</h2> <h3>Useful articles that will help you with similar issues</h3> <p style="text-decoration: underline;"><a href="https://www.healthnavigator.org.nz/healthy-living/a/argument-tips-for-having-a-healthy-argument/#:~:text=It‘s%20easy%20to%20interrupt%20or,each%20other%20a%20fair%20hearing." target="_blank">Tips for having a healthy argument</a></p> <p style="text-decoration: underline;"><a href="https://www.verywellmind.com/feeling-words-to-help-spouse-2300571" target="_blank">Improve Your Relationship By Putting Feelings Into Words</a></p> <p style="text-decoration: underline;"><a href="https://www.coupletalk.com/listentips201909/" target="_blank">4 Ways to Deepen Conversations in Your Relationship</a></p> <p style="text-decoration: underline;"><a href="https://www.loveisrespect.org/resources/conflict-resolution/" target="_blank">Conflicts resolution</a></p> <p style="text-decoration: underline;"><a href="https://au.reachout.com/articles/managing-the-pressures-of-a-relationship" target="_blank">Managing the pressures of a relationship</a></p>', 
+		'wait',
+		'wait',
+		'wait',
+		'wait',
+		'wait',
+		'Thank you for playing the game. Please feel free to choose other storylines and restart the game!',
 		'end'
 	],
 
 	'education4': [
 		'show scene default with fadeIn',
-		'show message Education4',
+		'nvl <style>p {text-align: center;} h2 {text-align: center; margin-top: 50px;} h3 {text-align: center; margin-bottom: 30px;}</style> <h2>Education Resources</h2> <h3>Useful articles that will help you with similar issues</h3> <p style="text-decoration: underline;"><a href="https://www.healthnavigator.org.nz/healthy-living/a/argument-tips-for-having-a-healthy-argument/#:~:text=It‘s%20easy%20to%20interrupt%20or,each%20other%20a%20fair%20hearing." target="_blank">Tips for having a healthy argument</a></p> <p style="text-decoration: underline;"><a href="https://www.verywellmind.com/feeling-words-to-help-spouse-2300571" target="_blank">Improve Your Relationship By Putting Feelings Into Words</a></p> <p style="text-decoration: underline;"><a href="https://www.coupletalk.com/listentips201909/" target="_blank">4 Ways to Deepen Conversations in Your Relationship</a></p> <p style="text-decoration: underline;"><a href="https://www.loveisrespect.org/resources/conflict-resolution/" target="_blank">Conflicts resolution</a></p> <p style="text-decoration: underline;"><a href="https://au.reachout.com/articles/managing-the-pressures-of-a-relationship" target="_blank">Managing the pressures of a relationship</a></p>', 
+		'wait',
+		'wait',
+		'wait',
+		'wait',
+		'wait',
+		'Thank you for playing the game. Please feel free to choose other storylines and restart the game!',
 		'end'
 	],
 
@@ -640,6 +674,7 @@ monogatari.script ({
 		'j Oh, sure!',
 		's:happy Do you know Anna? She is a sophmore as well. You guys might have taken the same classes. Also, Jack will join us later tonight.',
 		'j Sounds cool.',
+		'hide character j with fadeOut',
 		'show scene dinner with fadeIn',
 		'play sound dinner',
 		'At the restaurant Selena, Jonathan, and Anna came early.',
@@ -654,7 +689,6 @@ monogatari.script ({
 		'hide character a happy with fadeOut',
 		'show character j happy at left with fadeIn',
 		'show character ja talk at right with fadeIn',
-		'stop sound dinner',
 		'At the dinner, Jonathan and Anna talked a lot of things about band experience and complainted about classes. You felt kind of lonely since you did not have the same experience. Then Alison and Jack came. Johnathan and Jack began to talk about games and sports.',
 		'j How‘s it going?', 
 		'ja Good. I watched the football game yesterday. Great game！',
@@ -669,6 +703,7 @@ monogatari.script ({
 		'show character j speechless at left with fadeIn',
 		'j Oh, sorry. I forgot. Yeah, we can meet next time.',
 		'ja Alright, bro',
+		'stop sound dinner',
 		'show scene home with fadeIn',
 		'You and Jonathan came home from the restaurant',
 		'show character j happy with fadeIn',
@@ -701,9 +736,11 @@ monogatari.script ({
 		'j Holy cow! It‘s raining so bad!',
 		's:talk Yeah, it‘s weird. It is supposed to be a sunny day.',
 		'hide character j surprise with fadeOut',
-		'stop sound rain',
 		'show character j happy with fadeIn',
 		'j Although it is a little bit annoying, it’s fine. We can still have a good time babe. Let’s build our tent!',
+		'stop sound rain',
+		'The two of you built the tent and enjoyed your sandwiches in the rain. You were worried that Jonathan was unhappy, so you kept saying sorry. Jonathan always smiled at you.',
+		'j Oh Selena, it’s fine. It’s not your fault. I enjoy every moment I spend with you, and raining won’t change my feelings!',
 		'You and Jonathan had a great time. Jonathan’s gentleness and understanding makes your relationship with him more stable.',
 		'jump education2'
 	],
@@ -715,6 +752,7 @@ monogatari.script ({
 		'j Ok, babe. I am tired. Good night!',
 		'show message feeling',
 		'show scene camp with fadeIn',
+		'stop music backgroundMusic',
 		'play sound rain',
 		'On the weekend, Selena and Johnathan are at the camping place.',
 		'show character j angry with fadeIn',
@@ -725,6 +763,7 @@ monogatari.script ({
 		'j Why are you being so aggressive? Maybe you should learn from Anna to control your bad temper. She is way more mature than you.',
 		's:angry ......',
 		'stop sound rain',
+		'play music backgroundMusic with loop volume 70',
 		{
 			'Choice': {
 				'1': {
@@ -742,7 +781,8 @@ monogatari.script ({
 	'suicide':[
 		'show scene default with fadeIn',
 		'show image heart with fadeIn',
-		'After several fights, you ran out of your patience and you felt miserable about your life. Your boyfriend Jonathan broke up with you. You tried to commit a suicide​​ at your apartment but your friends found out and sent you to the emergency room.',
+		'After several fights, you ran out of your patience and you felt miserable about your life. Jonathan keeps comparing you with other girls and blaming you on everything that makes him unhappy. ', 
+		'He broke up with you a month later, which became your last straw. You took a bunch of pills at your apartment but your friends found you before it was too late. You were sent to the emergency room immediately.',
 		'jump education2'
 	],
 	'friend':[
@@ -785,10 +825,12 @@ monogatari.script ({
 		'j Sure. Give me one second. ',
 		'show scene park with fadeIn',
 		'You brought Jonathan to the back of the Science building. ',
-		'You start a deep breathing…',
+		'You took a deep breath…',
 		's:happy This may come as a surprise, but I want to say I’ve developed feelings for you. I know we have always been really good friends, but I think I should tell you that lately I have been thinking about more than just friendship. What do you think?',
+		'play sound heartbeat',
 		'show image heartbeat with fadeIn',
-		'Your heart starts racing and hands start sweating. You even couldn’t make eye contact with Jonathan. ',
+		'Your heart started racing and hands started sweating. You even couldn’t make eye contacts with Jonathan. ',
+		'stop sound heartbeat',
 		's:talk You don’t have to give me an answer now. It is okay, I understand that this is a little bit abrupt…',
 		'hide image heartbeat with fadeOut',
 		'show character j shy with fadeIn',
@@ -865,13 +907,15 @@ monogatari.script ({
 		'hide character a happy with fadeOut',
 		'show character a normal with fadeIn',
 		'a Never say that to yourself! The fact that he doesn’t like you doesn’t mean you are not attractive or pretty. You shouldn’t blame yourself for this!',
-		's:talk I cannot stop thinking this way. Ok, I will try to be positive. I got rejected this time. Maybe next time, I will get a "yes" or "Oh, well. This is what happened. I do not like it. It is not how I wanted things to work out. But everyone gets rejected — and I can try again.',
+		's:talk I cannot stop thinking this way. Ok, I will try to be positive. I got rejected this time.', 
+		's:talk Maybe next time, I will get a "yes" or "Oh, well. This is what happened. I do not like it. It is not how I wanted things to work out. But everyone gets rejected — and I can try again."',
 		'hide character a normal with fadeOut',
 		'show character a happy with fadeIn',
 		'a Exactly! Selena, you are brave. Give yourself credit for trying! One refusal means nothing.',
 		'show message comfort',
 		'…',
-		'You chatted with Anna for an hour and you felt so much better. She encouraged you to be positive and her warm words worked pretty well. It was reassuring to know that someone understands what you are going through and how it feels. You decided to make things move on and maintain the friendship between you and Jonathan. ',
+		'show scene default',
+		'centered You chatted with Anna for an hour and you felt so much better. She encouraged you to be positive and talked about some fun stories she recently heard of. It was reassuring to know that someone understands what you are going through and how it feels. You decided to make things move on and maintain the friendship between you and Jonathan. ',
 		'jump education3'
 	],
 	'CB2': [
@@ -984,6 +1028,7 @@ monogatari.script ({
 		'jump education4'
 	],
 	'DC1': [
+		'play sound argue with loop volume 66',
 		's:talk I’m not going to leave it alone. I feel that this is something serious and I won’t back away until you tell me.',
 		'j Really?',
 		's:talk Really.',
@@ -996,6 +1041,7 @@ monogatari.script ({
 		's:angry You drive ME crazy.',
 		'j I don’t want to tell you just because you want me to tell—',
 		's:angry Fine!! Don’t!!!',
+		'stop sound argue',
 		'hide character j angry with fadeOut',
 		'show character j speechless with fadeIn',
 		'j If I tell you it’s because I want to tell you. It’s that sort of thing!',
