@@ -5,11 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Chrome",
+            "type": "pwa-chrome",
             "request": "launch",
-            "type": "chrome",
-            "url": "file:///Users/josh/Desktop/INFO490-Day21/index.html",
-            "webRoot": "${workspaceFolder}"
+            "name": "Launch index.html",
+            "file": "${workspaceFolder}/index.html"
         }
     ]
 }

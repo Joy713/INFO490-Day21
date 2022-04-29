@@ -500,7 +500,7 @@ monogatari.script ({
 		'jump education1'
 	],
 
-	'resusePill':[
+	'refusePill':[
 		's:talk Why?? There could be serious side effects from taking any pills, and you just let me take the risk even if you can help me avoid this by using a condom??',
 		'hide character j happy with fadeOut',
 		'show character j speechless with fadeIn',
