@@ -2,6 +2,8 @@
 
 In the US, many schools provide sex education to students as a part of health education. However, there is a huge gap in conventional sex education on the emotional and psychosocial aspects of sex. Teenagers often lack a safe space to share information about the psychological part of relationships. This novel game LEX helps teenagers learn common issues and practical solutions for building up healthy relationships. The impact of inaction can be huge. Without knowledge about the emotional and psychological aspects of sex, teenagers won't be able to establish psychosocial development and well-being throughout adolescence and even adulthood.
 
+View the [Landing Page](http://susanyang.me/Day21Lex/) for more details.
+
 ## About us:
 We are a group of students from the Information School at the University of Washington. 
 - Catherine Miao: Backend & Frontend Dev
@@ -30,7 +32,7 @@ Please refer to the Lieracy Research Source file in the repo for all the sources
 
 - Interview more users and add more features. With limited time, we were not able to conduct as much interviews as we want. Future developers should interview more users and further improve the game. For example, developers could add voice-over or more sound effects. 
 - Research for more real stories and creating storylines for different genders to be more inclusive. Our current game only focuses on the girl side, we wish the future developer to consider male protagonist, non-binary gender, homosexual, and so on.
-- Add more user interactions to make the game more engaging. For example, add quizzes or interactive games when the users are making choices. Developers could refer to the video game Florence to gain insights (https://annapurnainteractive.com/games/florence).
+- Add more user interactions to make the game more engaging. For example, add quizzes or interactive games when the users are making choices. Developers could refer to the video game [Florence](https://annapurnainteractive.com/games/florence)to gain insights.
 
 ## Design and code:
 
